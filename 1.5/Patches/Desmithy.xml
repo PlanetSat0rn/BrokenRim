@@ -1,0 +1,7 @@
+<Patch>
+<Operation Class="PatchOperationAttributeSet">
+  <xpath>Defs/ThingDef[defName="RimPicks_Drill"]/recipeMaker/recipeUsers</xpath>
+  <attribute>Inherit</attribute>
+  <value>False</value>
+</Operation>
+</Patch>
