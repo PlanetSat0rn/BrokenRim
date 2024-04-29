@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AlienRace.ThingDef_AlienRace ParentName="Human" Name="GalaxusBase">
+		<defName>Galaxus</defName>
+		<label>Galaxus</label>
+		<description>Star People.</description>
+	<race>
+	
+	<needsRest>false</needsRest>
+	            <bloodDef>Filth_GalacticSplatter</bloodDef>
+            <bloodSmearDef>Filth_GalacticSmear</bloodSmearDef>
+	</race>
+		<alienRace>
+		    <graphicPaths>
+				<skinShader>Cutout</skinShader>
+				<body>BrokenRim/Humanlike/Pawn/Galaxus/Body/</body>
+				<head>BrokenRim/Humanlike/Pawn/Galaxus/Head/</head>
+			</graphicPaths>
+			<styleSettings>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+			</styleSettings>
+			<generalSettings>
+				<humanRecipeImport>true</humanRecipeImport>
+				<immuneToAge>true</immuneToAge>
+				<alienPartGenerator>
+				<headTypes Inherit="False">
+					<li>Male_AverageNormal</li>
+					<li>Female_AverageNormal</li>
+				</headTypes>
+				<bodyTypes Inherit="False">
+					<li>Male</li>
+					<li>Female</li>
+				</bodyTypes>
+				<colorChannels>
+  <li>
+    <name>skin</name>
+    <first Class="ColorGenerator_Single">
+      <color>RGB(255,255,255)</color>
+    </first>
+    <second Class="AlienRace.ColorGenerator_CustomAlienChannel">
+      <colorChannel>skin_1</colorChannel>
+    </second>
+  </li>
+  </colorChannels>
+				</alienPartGenerator>
+			</generalSettings>
+			<raceRestriction>
+                <blackGeneTags>
+                    <li>SkinColor</li>
+                    <li>SkinColorOverride</li>
+                </blackGeneTags>
+                <blackEndoCategories>
+                    <li>Melanin</li>
+                </blackEndoCategories>
+				<canReproduce>false</canReproduce>
+				<onlyUseRaceRestrictedXenotypes>true</onlyUseRaceRestrictedXenotypes>
+			</raceRestriction>
+			    <relationSettings>
+      <relationChanceModifierLover>0</relationChanceModifierLover>
+<relationChanceModifierExLover>0</relationChanceModifierExLover>
+
+<relationChanceModifierFiance>0</relationChanceModifierFiance>
+<relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+<relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+
+<relationChanceModifierParent>0</relationChanceModifierParent>
+<relationChanceModifierChild>0</relationChanceModifierChild>
+<relationChanceModifierSibling>0</relationChanceModifierSibling>
+    </relationSettings>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+	</Defs>

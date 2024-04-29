@@ -1,0 +1,9 @@
+<Defs>
+<PawnKindDef ParentName="BasePlayerPawnKind">
+    <defName>GalaxusColonist</defName>
+    <label>galaxus colonist</label>
+    <race>Galaxus</race>
+    <defaultFactionType>PlayerColony</defaultFactionType>
+    <initialResistanceRange>13~21</initialResistanceRange>
+</PawnKindDef>
+</Defs>
