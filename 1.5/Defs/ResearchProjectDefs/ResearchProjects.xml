@@ -1,6 +1,89 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	
-	
-	
+<ResearchProjectDef>
+    <defName>BrokenRimMainResearchT1</defName>
+    <label>exploration of alternate worlds</label>
+    <description>Explore the ways of the alternate worlds.</description>
+    <baseCost>3500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+	  <li>MicroelectronicsBasics</li>
+      <li>Machining</li>
+    </prerequisites>
+	<tab>
+	      <li>BrokenRimResearch</li>
+	</tab>
+	<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>0.50</researchViewX>
+  <researchViewY>2.60</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->exploration of alternate worlds</li>
+
+        <li>subject_story->pondered the existence of galaxus</li>
+        <li>subject_story->figured the existence of other human-likes</li>
+        <li>subject_story->attempted to find the meaning of the existence of galaxus</li>
+
+        <li>subject_gerund->exploration of alternate worlds</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>BrokenRimMainResearchT2</defName>
+    <label>uses of matter</label>
+    <description>Find ways to use matter to advantage.</description>
+    <baseCost>5000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+	  <li>Fabrication</li>
+	  <li>BrokenRimMainResearchT1</li>
+    </prerequisites>
+	<tab>
+	      <li>BrokenRimResearch</li>
+	</tab>
+	<requiredResearchBuilding>MultiAnalyzer</requiredResearchBuilding>
+    <researchViewX>1.50</researchViewX>
+  <researchViewY>2.70</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->uses of matter</li>
+
+        <li>subject_story->attempted to create matter from nothing</li>
+        <li>subject_story->forged matter into a useless trinket</li>
+        <li>subject_story->searched through the rimternet for matter generators.</li>
+
+        <li>subject_gerund->uses of matter</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+  
+    <ResearchProjectDef>
+    <defName>BrokenRimT2Weaponry</defName>
+    <label>Matter Weaponry</label>
+    <description>Research weapons the galaxus use.</description>
+    <baseCost>5200</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+	  <li>ChargedShot</li>
+	  <li>BrokenRimMainResearchT2</li>
+    </prerequisites>
+	<tab>
+	      <li>BrokenRimResearch</li>
+	</tab>
+	<requiredResearchBuilding>MultiAnalyzer</requiredResearchBuilding>
+    <researchViewX>1.50</researchViewX>
+  <researchViewY>2.00</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->Matter Weaponry</li>
+
+        <li>subject_story->used a shooting star to fight off an entire raid</li>
+        <li>subject_story->supplied entire galaxus armies with matter weaponry</li>
+        <li>subject_story->completely demolished the other side using a handcrafted light breaker.</li>
+
+        <li>subject_gerund->Matter Weaponry</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
 </Defs>

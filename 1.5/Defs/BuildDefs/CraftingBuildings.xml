@@ -1,0 +1,69 @@
+<Defs>
+<ThingDef ParentName="BenchBase" Name="BrokenRim_2x5Bench" Abstract="True">
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(7,4)</drawSize>
+      <shadowData>
+        <volume>(2.9, 0.3, 0.5)</volume>
+        <offset>(0, 0, 0)</offset>
+      </shadowData>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <size>(5,2)</size>
+    <designationCategory>BrokenBuilding_Category</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+	  <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+  </ThingDef>
+  <ThingDef ParentName="BrokenRim_2x5Bench">
+    <defName>BrokenRimT2Bench</defName>
+    <label>Advanced Fabrication Bench</label>
+    <description>A crafting bench designed by galaxus during a war. Provides crafting for T2-T3.</description>
+    <graphicData>
+      <texPath>BrokenRim/Buildings/AdvancedFabricationBench/AdvancedFabricationBench</texPath>
+    </graphicData>
+    <costList>
+      <Steel>150</Steel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <statBases>
+      <WorkToBuild>8000</WorkToBuild>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Flammability>0</Flammability>
+	  <WorkTableEfficiencyFactor>1</WorkTableEfficiencyFactor>
+    </statBases>
+	<researchPrerequisites>
+      <li>BrokenRimMainResearchT2</li>
+    </researchPrerequisites>
+  </ThingDef>
+</Defs>

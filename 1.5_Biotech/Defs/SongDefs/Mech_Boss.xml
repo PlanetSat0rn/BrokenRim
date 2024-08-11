@@ -1,0 +1,8 @@
+<Defs>
+  <SongDef>
+    <defName>TOABR_DiabolusMusic</defName>
+    <playOnMap>false</playOnMap>
+    <clipPath></clipPath>
+    <volume>1.0</volume>
+  </SongDef>
+</Defs>
