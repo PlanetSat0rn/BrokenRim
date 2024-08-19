@@ -52,16 +52,34 @@
     <graphicData>
       <texPath>BrokenRim/Buildings/AdvancedFabricationBench/AdvancedFabricationBench</texPath>
     </graphicData>
+	<thingClass>Building_WorkTable</thingClass>
     <costList>
       <Steel>150</Steel>
       <ComponentSpacer>3</ComponentSpacer>
     </costList>
+	<comps>
+	      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>350</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>3</heatPerSecond>
+      </li>
+	  </comps>
     <statBases>
       <WorkToBuild>8000</WorkToBuild>
       <MaxHitPoints>3000</MaxHitPoints>
       <Flammability>0</Flammability>
 	  <WorkTableEfficiencyFactor>1</WorkTableEfficiencyFactor>
     </statBases>
+	<recipes>
+      <li>Make_ComponentIndustrial</li>
+      <li>Make_ComponentSpacer</li>
+    </recipes>
 	<researchPrerequisites>
       <li>BrokenRimMainResearchT2</li>
     </researchPrerequisites>
