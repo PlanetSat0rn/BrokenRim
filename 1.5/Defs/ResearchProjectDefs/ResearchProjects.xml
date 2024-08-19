@@ -42,7 +42,10 @@
 	<tab>
 	      <li>BrokenRimResearch</li>
 	</tab>
-	<requiredResearchBuilding>MultiAnalyzer</requiredResearchBuilding>
+	<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	<requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
     <researchViewX>1.50</researchViewX>
   <researchViewY>2.70</researchViewY>
     <generalRules>
@@ -71,7 +74,10 @@
 	<tab>
 	      <li>BrokenRimResearch</li>
 	</tab>
-	<requiredResearchBuilding>MultiAnalyzer</requiredResearchBuilding>
+	<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	<requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
     <researchViewX>1.50</researchViewX>
   <researchViewY>2.00</researchViewY>
     <generalRules>
