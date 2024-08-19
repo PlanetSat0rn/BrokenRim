@@ -55,7 +55,7 @@
       <ComponentSpacer>1</ComponentSpacer>
     </costList>
     <statBases>
-      <WorkToMake>3500</WorkToMake>
+      <WorkToMake>13500</WorkToMake>
       <Mass>1.2</Mass>
       <AccuracyTouch>0.90</AccuracyTouch>
       <AccuracyShort>0.80</AccuracyShort>
@@ -125,7 +125,7 @@
       <ComponentSpacer>2</ComponentSpacer>
     </costList>
     <statBases>
-      <WorkToMake>4500</WorkToMake>
+      <WorkToMake>14500</WorkToMake>
       <Mass>1.2</Mass>
       <AccuracyTouch>0.90</AccuracyTouch>
       <AccuracyShort>0.80</AccuracyShort>
@@ -196,7 +196,7 @@
 	  <Chemfuel>20</Chemfuel>
     </costList>
     <statBases>
-      <WorkToMake>5000</WorkToMake>
+      <WorkToMake>15000</WorkToMake>
       <Mass>1.2</Mass>
       <AccuracyTouch>0.58</AccuracyTouch>
       <AccuracyShort>0.72</AccuracyShort>
