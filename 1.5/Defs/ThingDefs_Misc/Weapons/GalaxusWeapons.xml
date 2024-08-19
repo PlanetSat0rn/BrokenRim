@@ -23,7 +23,7 @@
 	<projectile>
       <damageDef>PlasmaBurnDamage</damageDef>
       <damageAmountBase>24</damageAmountBase>
-	  <armorPenetrationBase>0.55</armorPenetrationBase>
+	  <armorPenetrationBase>0.85</armorPenetrationBase>
       <speed>80</speed>
     </projectile>
 </ThingDef>
@@ -100,7 +100,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_StarGazer</defName>
     <label>gazer</label>
-    <description>The main weapon of Galaxus scouts. Modeled after the SMG. Shoots volleys of stars.</description>
+    <description>The main weapon of Galaxus scouts. Modeled after the SMG. Shoots volleys of stars. It is fast.</description>
     <graphicData>
       <texPath>BrokenRim/Weapons/StarGazer</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -131,16 +131,16 @@
       <AccuracyShort>0.80</AccuracyShort>
       <AccuracyMedium>0.60</AccuracyMedium>
       <AccuracyLong>0.40</AccuracyLong>
-      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>0.3</RangedWeapon_Cooldown>
     </statBases>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_Star</defaultProjectile>
-        <warmupTime>0.8</warmupTime>
+        <warmupTime>0.5</warmupTime>
         <range>25.9</range>
-		<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+		<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
 		<burstShotCount>6</burstShotCount>
         <soundCast>Shot_Laser</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
@@ -170,7 +170,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_StarCluster</defName>
     <label>comet striker</label>
-    <description>A double barrel star weapon used by Galaxus infantry. Shoots a cluster of stars.</description>
+    <description>A double barrel star weapon used by Galaxus infantry. Shoots a cluster of stars. It is designed to efficiently decimate enemies.</description>
     <graphicData>
       <texPath>BrokenRim/Weapons/StarCluster</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -202,16 +202,16 @@
       <AccuracyShort>0.72</AccuracyShort>
       <AccuracyMedium>0.56</AccuracyMedium>
       <AccuracyLong>0.47</AccuracyLong>
-      <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
     </statBases>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_StarCluster</defaultProjectile>
-        <warmupTime>1</warmupTime>
+        <warmupTime>0.8</warmupTime>
         <range>13.4</range>
-		<ticksBetweenBurstShots>45</ticksBetweenBurstShots>
+		<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
 		<burstShotCount>2</burstShotCount>
         <soundCast>Shot_LaserShotgun</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
