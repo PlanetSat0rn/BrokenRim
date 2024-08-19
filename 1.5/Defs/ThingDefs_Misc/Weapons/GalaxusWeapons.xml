@@ -9,7 +9,7 @@
 	<projectile>
       <damageDef>PlasmaBurnDamage</damageDef>
       <damageAmountBase>8</damageAmountBase>
-	  <armorPenetrationBase>0.35</armorPenetrationBase>
+	  <armorPenetrationBase>0.55</armorPenetrationBase>
       <speed>100</speed>
     </projectile>
 </ThingDef>
@@ -23,7 +23,7 @@
 	<projectile>
       <damageDef>PlasmaBurnDamage</damageDef>
       <damageAmountBase>24</damageAmountBase>
-	  <armorPenetrationBase>0.85</armorPenetrationBase>
+	  <armorPenetrationBase>1</armorPenetrationBase>
       <speed>80</speed>
     </projectile>
 </ThingDef>
