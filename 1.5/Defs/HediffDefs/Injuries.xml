@@ -1,0 +1,31 @@
+<Defs>
+<HediffDef ParentName="BurnBase">
+    <defName>BR_PlasmaBurn</defName>
+    <label>plasma burn</label>
+    <labelNoun>a plasma burn</labelNoun>
+    <description>A plasma burn.</description>
+    <comps>
+      <li Class="HediffCompProperties_GetsPermanent">
+        <permanentLabel>plasma burn scar</permanentLabel>
+      </li>
+    </comps>
+    <injuryProps>
+      <destroyedLabel>Burned off</destroyedLabel>
+      <destroyedOutLabel>Burned out</destroyedOutLabel>
+    </injuryProps>
+  </HediffDef>
+  <DamageDef Name="PlasmaBurnDamage">
+    <defName>PlasmaBurnDamage</defName>
+    <label>plasma</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been burned to death by plasma.</deathMessage>
+    <hediff>BR_PlasmaBurn</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Electric</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+    <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+  </DamageDef>
+</Defs>

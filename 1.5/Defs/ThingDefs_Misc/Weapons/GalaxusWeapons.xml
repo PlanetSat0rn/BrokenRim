@@ -7,16 +7,30 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 	<projectile>
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>30</damageAmountBase>
-      <stoppingPower>3</stoppingPower>
+      <damageDef>PlasmaBurnDamage</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+	  <armorPenetrationBase>0.35</armorPenetrationBase>
+      <speed>100</speed>
+    </projectile>
+</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+    <defName>Bullet_StarCluster</defName>
+    <label>star cluster</label>
+    <graphicData>
+      <texPath>BrokenRim/Projectiles/StarCluster</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>PlasmaBurnDamage</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+	  <armorPenetrationBase>0.55</armorPenetrationBase>
       <speed>80</speed>
     </projectile>
 </ThingDef>
 <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_ShootingStar</defName>
     <label>shooting star</label>
-    <description>The main weapon of Galaxus scouts. Shoots stars.</description>
+    <description>The secondary weapon of Galaxus scouts. Shoots stars.</description>
     <graphicData>
       <texPath>BrokenRim/Weapons/ShootingStar</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -37,11 +51,11 @@
       <li>RangedLight</li>
     </weaponClasses>
 	    <costList>
-      <Steel>80</Steel>
-      <ComponentSpacer>2</ComponentSpacer>
+      <Plasteel>80</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
     </costList>
     <statBases>
-      <WorkToMake>5000</WorkToMake>
+      <WorkToMake>3500</WorkToMake>
       <Mass>1.2</Mass>
       <AccuracyTouch>0.90</AccuracyTouch>
       <AccuracyShort>0.80</AccuracyShort>
@@ -54,11 +68,11 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_Star</defaultProjectile>
-        <warmupTime>1</warmupTime>
+        <warmupTime>0.8</warmupTime>
         <range>25.9</range>
 		<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
 		<burstShotCount>3</burstShotCount>
-        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCast>Shot_Laser</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -79,6 +93,139 @@
           <li>Poke</li>
         </capacities>
         <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_StarGazer</defName>
+    <label>star gazer</label>
+    <description>The main weapon of Galaxus scouts. Shoots volleys of stars.</description>
+    <graphicData>
+      <texPath>BrokenRim/Weapons/StarGazer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>BrokenRimT2Weaponry</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <displayPriority>405</displayPriority>
+	  <recipeUsers>
+	  <li>BrokenRimT2Bench</li>
+	  </recipeUsers>
+    </recipeMaker>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	    <costList>
+      <Plasteel>110</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <statBases>
+      <WorkToMake>4500</WorkToMake>
+      <Mass>1.2</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.60</AccuracyMedium>
+      <AccuracyLong>0.40</AccuracyLong>
+      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Star</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>25.9</range>
+		<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+		<burstShotCount>6</burstShotCount>
+        <soundCast>Shot_Laser</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_StarCluster</defName>
+    <label>star cluster</label>
+    <description>A weapon used by Galaxus infantry. Shoots a cluster of stars.</description>
+    <graphicData>
+      <texPath>BrokenRim/Weapons/StarCluster</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>BrokenRimT2Weaponry</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <displayPriority>405</displayPriority>
+	  <recipeUsers>
+	  <li>BrokenRimT2Bench</li>
+	  </recipeUsers>
+    </recipeMaker>
+    <weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>
+	    <costList>
+      <Plasteel>135</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+	  <Chemfuel>20</Chemfuel>
+    </costList>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>1.2</Mass>
+      <AccuracyTouch>0.58</AccuracyTouch>
+      <AccuracyShort>0.72</AccuracyShort>
+      <AccuracyMedium>0.56</AccuracyMedium>
+      <AccuracyLong>0.47</AccuracyLong>
+      <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_StarCluster</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>13.4</range>
+		<ticksBetweenBurstShots>45</ticksBetweenBurstShots>
+		<burstShotCount>2</burstShotCount>
+        <soundCast>Shot_LaserShotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>12</power>
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>

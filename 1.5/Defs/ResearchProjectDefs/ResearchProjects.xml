@@ -60,8 +60,8 @@
   
     <ResearchProjectDef>
     <defName>BrokenRimT2Weaponry</defName>
-    <label>Matter Weaponry</label>
-    <description>Research weapons the galaxus use.</description>
+    <label>Star Weaponry</label>
+    <description>Research how matter is used to make plasma-star weapons.</description>
     <baseCost>5200</baseCost>
     <techLevel>Spacer</techLevel>
     <prerequisites>
@@ -76,13 +76,13 @@
   <researchViewY>2.00</researchViewY>
     <generalRules>
       <rulesStrings>
-        <li>subject->Matter Weaponry</li>
+        <li>subject->Star Weaponry</li>
 
         <li>subject_story->used a shooting star to fight off an entire raid</li>
-        <li>subject_story->supplied entire galaxus armies with matter weaponry</li>
-        <li>subject_story->completely demolished the other side using a handcrafted light breaker.</li>
+        <li>subject_story->supplied entire galaxus armies with star weaponry</li>
+        <li>subject_story->completely demolished the other side using a handcrafted star cluster.</li>
 
-        <li>subject_gerund->Matter Weaponry</li>
+        <li>subject_gerund->Star Weaponry</li>
       </rulesStrings>
     </generalRules>
   </ResearchProjectDef>
