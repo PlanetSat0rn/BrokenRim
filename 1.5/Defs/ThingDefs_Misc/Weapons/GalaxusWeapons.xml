@@ -99,7 +99,7 @@
   </ThingDef>
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_StarGazer</defName>
-    <label>star gazer</label>
+    <label>gazer</label>
     <description>The main weapon of Galaxus scouts. Modeled after the SMG. Shoots volleys of stars.</description>
     <graphicData>
       <texPath>BrokenRim/Weapons/StarGazer</texPath>
@@ -169,7 +169,7 @@
   </ThingDef>
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_StarCluster</defName>
-    <label>star cluster</label>
+    <label>comet striker</label>
     <description>A double barrel star weapon used by Galaxus infantry. Shoots a cluster of stars.</description>
     <graphicData>
       <texPath>BrokenRim/Weapons/StarCluster</texPath>
