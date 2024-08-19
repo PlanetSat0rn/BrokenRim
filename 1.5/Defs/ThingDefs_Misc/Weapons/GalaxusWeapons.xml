@@ -22,7 +22,7 @@
     </graphicData>
 	<projectile>
       <damageDef>PlasmaBurnDamage</damageDef>
-      <damageAmountBase>18</damageAmountBase>
+      <damageAmountBase>24</damageAmountBase>
 	  <armorPenetrationBase>0.55</armorPenetrationBase>
       <speed>80</speed>
     </projectile>
@@ -30,7 +30,7 @@
 <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_ShootingStar</defName>
     <label>shooting star</label>
-    <description>The secondary weapon of Galaxus scouts. Shoots stars.</description>
+    <description>The secondary weapon of Galaxus scouts. Works like a pistol. Shoots stars.</description>
     <graphicData>
       <texPath>BrokenRim/Weapons/ShootingStar</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -100,7 +100,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_StarGazer</defName>
     <label>star gazer</label>
-    <description>The main weapon of Galaxus scouts. Shoots volleys of stars.</description>
+    <description>The main weapon of Galaxus scouts. Modeled after the SMG. Shoots volleys of stars.</description>
     <graphicData>
       <texPath>BrokenRim/Weapons/StarGazer</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -170,7 +170,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_StarCluster</defName>
     <label>star cluster</label>
-    <description>A weapon used by Galaxus infantry. Shoots a cluster of stars.</description>
+    <description>A double barrel star weapon used by Galaxus infantry. Shoots a cluster of stars.</description>
     <graphicData>
       <texPath>BrokenRim/Weapons/StarCluster</texPath>
       <graphicClass>Graphic_Single</graphicClass>
