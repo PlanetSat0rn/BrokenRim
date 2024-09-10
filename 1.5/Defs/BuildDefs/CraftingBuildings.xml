@@ -48,7 +48,7 @@
   <ThingDef ParentName="BrokenRim_2x5Bench">
     <defName>BrokenRimT2Bench</defName>
     <label>Advanced Fabrication Bench</label>
-    <description>A crafting bench designed by galaxus during a war. Provides crafting for T2-T3.</description>
+    <description>A crafting bench designed by Cosmokin during a war. Provides crafting for T2-T3.</description>
     <graphicData>
       <texPath>BrokenRim/Buildings/AdvancedFabricationBench/AdvancedFabricationBench</texPath>
     </graphicData>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<AlienRace.ThingDef_AlienRace ParentName="Human" Name="GalaxusBase">
-		<defName>Galaxus</defName>
-		<label>Galaxus</label>
+	<AlienRace.ThingDef_AlienRace ParentName="Human" Name="CosmokinBase">
+		<defName>Cosmokin</defName>
+		<label>Cosmokin</label>
 		<description>Star People.</description>
 	<race>
 	
@@ -13,8 +13,8 @@
 		<alienRace>
 		    <graphicPaths>
 				<skinShader>Cutout</skinShader>
-				<body>BrokenRim/Humanlike/Pawn/Galaxus/Body/</body>
-				<head>BrokenRim/Humanlike/Pawn/Galaxus/Head/</head>
+				<body>BrokenRim/Humanlike/Pawn/Cosmokin/Body/</body>
+				<head>BrokenRim/Humanlike/Pawn/Cosmokin/Head/</head>
 			</graphicPaths>
 			<styleSettings>
 				<li>

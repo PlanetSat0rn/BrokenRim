@@ -1,4 +1,4 @@
-<Defs>
+<Defs>`
 <ThingDef ParentName="BaseBullet">
     <defName>Bullet_Star</defName>
     <label>star</label>
@@ -9,7 +9,7 @@
 	<projectile>
       <damageDef>PlasmaBurnDamage</damageDef>
       <damageAmountBase>8</damageAmountBase>
-	  <armorPenetrationBase>0.55</armorPenetrationBase>
+	  <armorPenetrationBase>0.5</armorPenetrationBase>
       <speed>100</speed>
     </projectile>
 </ThingDef>
@@ -30,7 +30,7 @@
 <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_ShootingStar</defName>
     <label>shooting star</label>
-    <description>The secondary weapon of Galaxus scouts. Works like a pistol. Shoots stars.</description>
+    <description>The secondary weapon of Cosmokin scouts. Works like a pistol. Shoots stars.</description>
     <graphicData>
       <texPath>BrokenRim/Weapons/ShootingStar</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -100,7 +100,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_StarGazer</defName>
     <label>gazer</label>
-    <description>The main weapon of Galaxus scouts. Modeled after the SMG. Shoots volleys of stars. It is fast.</description>
+    <description>The main weapon of Cosmokin scouts. Modeled after the SMG. Shoots volleys of stars. It is fast.</description>
     <graphicData>
       <texPath>BrokenRim/Weapons/StarGazer</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -170,7 +170,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_StarCluster</defName>
     <label>comet striker</label>
-    <description>A double barrel star weapon used by Galaxus infantry. Shoots a cluster of stars. It is designed to efficiently decimate enemies.</description>
+    <description>A double barrel star weapon used by Cosmokin infantry. Shoots a cluster of stars. It is designed to efficiently decimate enemies.</description>
     <graphicData>
       <texPath>BrokenRim/Weapons/StarCluster</texPath>
       <graphicClass>Graphic_Single</graphicClass>

@@ -20,9 +20,9 @@
       <rulesStrings>
         <li>subject->exploration of alternate worlds</li>
 
-        <li>subject_story->pondered the existence of galaxus</li>
+        <li>subject_story->pondered the existence of Cosmokin</li>
         <li>subject_story->figured the existence of other human-likes</li>
-        <li>subject_story->attempted to find the meaning of the existence of galaxus</li>
+        <li>subject_story->attempted to find the meaning of the existence of Cosmokin</li>
 
         <li>subject_gerund->exploration of alternate worlds</li>
       </rulesStrings>
@@ -31,8 +31,8 @@
   
   <ResearchProjectDef>
     <defName>BrokenRimMainResearchT2</defName>
-    <label>uses of matter</label>
-    <description>Find ways to use matter to advantage.</description>
+    <label>uses of neutrosteel</label>
+    <description>Find ways to use neutrosteel to advantage.</description>
     <baseCost>5000</baseCost>
     <techLevel>Spacer</techLevel>
     <prerequisites>
@@ -50,13 +50,13 @@
   <researchViewY>2.70</researchViewY>
     <generalRules>
       <rulesStrings>
-        <li>subject->uses of matter</li>
+        <li>subject->uses of neutrosteel</li>
 
-        <li>subject_story->attempted to create matter from nothing</li>
-        <li>subject_story->forged matter into a useless trinket</li>
-        <li>subject_story->searched through the rimternet for matter generators.</li>
+        <li>subject_story->attempted to create neutrosteel from scrap</li>
+        <li>subject_story->forged neutrosteel into a useless trinket</li>
+        <li>subject_story->searched through the rimternet for neutrosteel forges.</li>
 
-        <li>subject_gerund->uses of matter</li>
+        <li>subject_gerund->uses of neutrosteel</li>
       </rulesStrings>
     </generalRules>
   </ResearchProjectDef>
@@ -64,7 +64,7 @@
     <ResearchProjectDef>
     <defName>BrokenRimT2Weaponry</defName>
     <label>Star Weaponry</label>
-    <description>Research how matter is used to make plasma-star weapons.</description>
+    <description>Research how neutrosteel is used to make plasma-star weapons.</description>
     <baseCost>5200</baseCost>
     <techLevel>Spacer</techLevel>
     <prerequisites>
@@ -85,7 +85,7 @@
         <li>subject->Star Weaponry</li>
 
         <li>subject_story->used a shooting star to fight off an entire raid</li>
-        <li>subject_story->supplied entire galaxus armies with star weaponry</li>
+        <li>subject_story->supplied entire Cosmokin armies with star weaponry</li>
         <li>subject_story->completely demolished the other side using a handcrafted star cluster.</li>
 
         <li>subject_gerund->Star Weaponry</li>
