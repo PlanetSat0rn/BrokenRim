@@ -3,7 +3,7 @@
 	<AlienRace.ThingDef_AlienRace ParentName="Human" Name="CosmokinBase">
 		<defName>Cosmokin</defName>
 		<label>Cosmokin</label>
-		<description>Star People.</description>
+		<description>Cosmokin are often called children of the stars. Their exact origin is unknown but a popular theory is that they came from a god named Lucis after he ascended. They consist of a body made out of stardust with a core in the chest.</description>
 	<race>
 	
 	<needsRest>false</needsRest>

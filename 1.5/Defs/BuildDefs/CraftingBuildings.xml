@@ -86,7 +86,7 @@
   </ThingDef>
   
   <WorkGiverDef>
-<defName>DoBillsT2Bencg</defName>
+<defName>DoBillsT2Bench</defName>
 <label>fabricate things</label>
 <giverClass>WorkGiver_DoBill</giverClass>
 <workType>Smithing</workType>

@@ -1,0 +1,56 @@
+<Defs>
+<ThingDef ParentName="ResourceBase">
+    <defName>BrokenRimChococream</defName>
+    <label>Chococream bar</label>
+    <description>A delicious bar of chocolate filled with chocolate cream. It has a foil wrapper. It's bigger than a regular chocolate bar. Made by a famous interstellar chocolate company named Willa Wanky Chocolate Making. There are ongoing allegations on whether or not it uses Sweety Choco Milk</description>
+    <graphicData>
+      <texPath>BrokenRim/Items/FancyChocolate</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.9</drawSize>
+    </graphicData>
+	<costList>
+      <Chocolate>20</Chocolate>
+    </costList>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <socialPropernessMatters>true</socialPropernessMatters>
+	<recipeMaker>
+      <workSpeedStat>CookSpeed</workSpeedStat>
+      <workSkill>Cooking</workSkill>
+      <effectWorking>Cook</effectWorking>
+      <soundWorking>Recipe_CookMeal</soundWorking>
+	  <workAmount>3200</workAmount>
+      <recipeUsers>
+        <li>ElectricStove</li>
+        <li>FueledStove</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Cooking>10</Cooking>
+      </skillRequirements>
+      <researchPrerequisite>BrokenRimMiscResearch</researchPrerequisite>
+    </recipeMaker>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <MarketValue>60</MarketValue>
+      <Mass>0.2</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>9</DeteriorationRate>
+      <Nutrition>2</Nutrition>
+    </statBases>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>MealLavish</preferability>
+      <foodType>Meal</foodType>
+      <joy>0.3</joy>
+      <joyKind>Gluttonous</joyKind>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce>
+      <ingestSound>Meal_Eat</ingestSound>
+	  <tasteThought>AteLavishMeal</tasteThought>
+    </ingestible>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+    <possessionCount>10</possessionCount>
+  </ThingDef>
+</Defs>

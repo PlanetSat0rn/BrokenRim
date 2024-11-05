@@ -15,7 +15,7 @@
 	</tab>
 	<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <researchViewX>0.50</researchViewX>
-  <researchViewY>2.60</researchViewY>
+  <researchViewY>2.80</researchViewY>
     <generalRules>
       <rulesStrings>
         <li>subject->exploration of alternate worlds</li>
@@ -47,7 +47,7 @@
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
     <researchViewX>1.50</researchViewX>
-  <researchViewY>2.70</researchViewY>
+  <researchViewY>2.80</researchViewY>
     <generalRules>
       <rulesStrings>
         <li>subject->uses of neutrosteel</li>
@@ -57,6 +57,37 @@
         <li>subject_story->searched through the rimternet for neutrosteel forges.</li>
 
         <li>subject_gerund->uses of neutrosteel</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>BrokenRimMainResearchT3</defName>
+    <label>neutrosteel enrichment</label>
+    <description>Enrich neutrosteel with different resources.</description>
+    <baseCost>5000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+	  <li>BrokenRimMainResearchT2</li>
+    </prerequisites>
+	<tab>
+	      <li>BrokenRimResearch</li>
+	</tab>
+	<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	<requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>2.50</researchViewX>
+  <researchViewY>2.70</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->enriching neutrosteel</li>
+
+        <li>subject_story->tried to enrich neutrosteel with uranium</li>
+        <li>subject_story->created rimnobyl after a malfunction with enrichment</li>
+        <li>subject_story->experimented on different resources to see what it is enriched with</li>
+
+        <li>subject_gerund->enriching neutrosteel</li>
       </rulesStrings>
     </generalRules>
   </ResearchProjectDef>
@@ -79,7 +110,7 @@
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
     <researchViewX>1.50</researchViewX>
-  <researchViewY>2.00</researchViewY>
+  <researchViewY>2.20</researchViewY>
     <generalRules>
       <rulesStrings>
         <li>subject->Star Weaponry</li>
@@ -89,6 +120,60 @@
         <li>subject_story->completely demolished the other side using a handcrafted star cluster.</li>
 
         <li>subject_gerund->Star Weaponry</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>BrokenRimT3Weaponry</defName>
+    <label>Shard Weaponry</label>
+    <description>Research the uses of enriched neutrosteel shards and unlock the finalized star weapon.</description>
+    <baseCost>5200</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+	  <li>BrokenRimT2Weaponry</li>
+	  <li>BrokenRimMainResearchT3</li>
+    </prerequisites>
+	<tab>
+	      <li>BrokenRimResearch</li>
+	</tab>
+	<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	<requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>2.50</researchViewX>
+  <researchViewY>2.20</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->Shard Weaponry</li>
+
+        <li>subject_story->placeholder</li>
+        <li>subject_story->placeholder</li>
+        <li>subject_story->placeholder</li>
+
+        <li>subject_gerund->Shard Weaponry</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>BrokenRimMiscResearch</defName>
+    <label>Misc Stuff</label>
+    <description>Just stuff I felt like making.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+	<tab>
+	      <li>BrokenRimResearch</li>
+	</tab>
+    <researchViewX>0.50</researchViewX>
+  <researchViewY>0.30</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->placeholder</li>
+
+        <li>subject_story->placeholder</li>
+        <li>subject_story->placeholder</li>
+        <li>subject_story->placeholder</li>
+
+        <li>subject_gerund->placeholder</li>
       </rulesStrings>
     </generalRules>
   </ResearchProjectDef>
