@@ -79,5 +79,6 @@
 <relationChanceModifierSibling>0</relationChanceModifierSibling>
     </relationSettings>
 		</alienRace>
+		<comps></comps>
 	</AlienRace.ThingDef_AlienRace>
 	</Defs>

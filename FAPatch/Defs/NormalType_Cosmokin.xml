@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FacialAnimation.BrowTypeDef>
+		<defName>Cosmokin_BrowNormal</defName>
+		<texPath>BrokenRim/FA/Cosmokin/Brows/Normal</texPath>
+		<shader>Map/Transparent</shader>
+		<raceName>Cosmokin</raceName>
+	</FacialAnimation.BrowTypeDef>
+
+	<FacialAnimation.EyeballTypeDef>
+		<defName>Cosmokin_EyeNormal</defName>
+		<texPath>BrokenRim/FA/Cosmokin/Eyes/Normal</texPath>
+		<shader>Map/CutoutComplex</shader>
+		<minColor>RGB(0,0,0)</minColor>
+		<maxColor>RGB(1,1,1)</maxColor>
+		<raceName>Cosmokin</raceName>
+	</FacialAnimation.EyeballTypeDef>
+
+	<FacialAnimation.HeadTypeDef>
+		<defName>Cosmokin_HeadNormal</defName>
+		<texPath>BrokenRim/FA/Cosmokin/Heads_Blank/Normal</texPath>
+		<shader>Map/CutoutSkinOverride</shader>
+		<raceName>Cosmokin</raceName>
+	</FacialAnimation.HeadTypeDef>
+
+	<FacialAnimation.LidTypeDef>
+		<defName>Cosmokin_LidNormal</defName>
+		<texPath>BrokenRim/FA/Cosmokin/Lids/Normal</texPath>
+		<shader>Map/Transparent</shader>
+		<raceName>Cosmokin</raceName>
+	</FacialAnimation.LidTypeDef>
+
+	<FacialAnimation.MouthTypeDef>
+		<defName>Cosmokin_MouthNormal</defName>
+		<texPath>BrokenRim/FA/Cosmokin/Mouth/Normal</texPath>
+		<shader>Map/CutoutComplex</shader>
+		<raceName>Cosmokin</raceName>
+	</FacialAnimation.MouthTypeDef>
+
+<FacialAnimation.MouthTypeDef>
+		<defName>Cosmokin_MouthSmol</defName>
+		<texPath>BrokenRim/FA/Cosmokin/Mouth/Smol</texPath>
+		<shader>Map/CutoutComplex</shader>
+		<raceName>Cosmokin</raceName>
+	</FacialAnimation.MouthTypeDef>
+
+	<FacialAnimation.EmotionTypeDef>
+		<defName>Cosmokin_EmotionNormal</defName>
+		<texPath>BrokenRim/FA/Cosmokin/Emotions/Normal</texPath>
+		<shader>Map/Transparent</shader>
+		<raceName>Cosmokin</raceName>
+	</FacialAnimation.EmotionTypeDef>
+
+	<FacialAnimation.LidOptionTypeDef>
+		<defName>Cosmokin_LidOptionNormal</defName>
+		<texPath>BrokenRim/FA/Cosmokin/LidOptions/Normal</texPath>
+		<shader>Map/Transparent</shader>
+		<minColor>(1,1,1,1)</minColor>
+		<maxColor>(1,1,1,1)</maxColor>
+		<raceName>Cosmokin</raceName>
+	</FacialAnimation.LidOptionTypeDef>
+	
+	<FacialAnimation.SkinTypeDef>
+		<defName>Cosmokin_SkinNormal</defName>
+		<texPath>BrokenRim/FA/Cosmokin/Skins/Normal</texPath>
+		<shader>Map/CutoutSkin</shader>
+		<raceName>Cosmokin</raceName>
+	</FacialAnimation.SkinTypeDef>
+	
+</Defs>
