@@ -33,7 +33,12 @@
     <label>stability</label>
     <labelNoun>the stability</labelNoun>
     <description>The Stability.</description>
-    <hidden>true</hidden>
+    <stages>
+<li>
+<label>default</label>
+<becomeVisible>false</becomeVisible>
+</li>
+    </stages>
     <comps>
       <li Class="BrokenRim.HediffCompProperties_Stability">
         <damageDef>Unstability</damageDef>
