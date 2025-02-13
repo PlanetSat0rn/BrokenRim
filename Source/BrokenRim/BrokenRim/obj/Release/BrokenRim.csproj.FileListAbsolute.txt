@@ -1,0 +1,8 @@
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\BrokenRim\Source\BrokenRim\BrokenRim\bin\Release\BrokenRim.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\BrokenRim\Source\BrokenRim\BrokenRim\bin\Release\BrokenRim.pdb
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\BrokenRim\Source\BrokenRim\BrokenRim\obj\Release\BrokenRim.csproj.AssemblyReference.cache
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\BrokenRim\Source\BrokenRim\BrokenRim\obj\Release\BrokenRim.csproj.CoreCompileInputs.cache
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\BrokenRim\Source\BrokenRim\BrokenRim\obj\Release\BrokenRim.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\BrokenRim\Source\BrokenRim\BrokenRim\obj\Release\BrokenRim.pdb
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\BrokenRim\1.5\Assemblies\BrokenRim.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\BrokenRim\1.5\Assemblies\BrokenRim.pdb

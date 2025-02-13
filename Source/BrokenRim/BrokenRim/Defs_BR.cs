@@ -1,0 +1,18 @@
+﻿using RimWorld;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Verse;
+
+namespace BrokenRim
+{
+    [DefOf]
+    public static class Defs_BR
+    {
+        public static SoundDef Stability_Hit;
+        public static SoundDef Stability_Explode;
+        public static DamageDef Unstability;
+    }
+}

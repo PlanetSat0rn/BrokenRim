@@ -5,6 +5,13 @@
     <race>Cosmokin</race>
     <defaultFactionType>PlayerColony</defaultFactionType>
     <initialResistanceRange>13~21</initialResistanceRange>
+    <startingHediffs>
+  <li>
+    <def>BR_Stability</def>
+    <severity>1</severity>
+    <chance>1</chance>
+  </li>
+</startingHediffs>
 </PawnKindDef>
 
 <PawnKindDef ParentName="VillagerBase">
@@ -12,23 +19,51 @@
     <label>cosmokin villager</label>
 	<race>Cosmokin</race>
 	<defaultFactionType>CosmokinCivil</defaultFactionType>
+  <startingHediffs>
+  <li>
+    <def>BR_Stability</def>
+    <severity>1</severity>
+    <chance>1</chance>
+  </li>
+</startingHediffs>
   </PawnKindDef>
   <PawnKindDef ParentName="GuardBase">
     <defName>CosmokinGuard</defName>
     <label>cosmokin guard</label>
 	<race>Cosmokin</race>
 	<defaultFactionType>CosmokinCivil</defaultFactionType>
+  <startingHediffs>
+  <li>
+    <def>BR_Stability</def>
+    <severity>1</severity>
+    <chance>1</chance>
+  </li>
+</startingHediffs>
   </PawnKindDef>
   <PawnKindDef ParentName="TraderBase">
     <defName>CosmokinTrader</defName>
     <label>cosmokin trader</label>
 	<race>Cosmokin</race>
 	<defaultFactionType>CosmokinCivil</defaultFactionType>
+  <startingHediffs>
+  <li>
+    <def>BR_Stability</def>
+    <severity>1</severity>
+    <chance>1</chance>
+  </li>
+</startingHediffs>
   </PawnKindDef>
   <PawnKindDef ParentName="CouncilmanBase">
     <defName>CosmokinStar</defName>
     <label>cosmokin star</label>
 	<race>Cosmokin</race>
 	<defaultFactionType>CosmokinCivil</defaultFactionType>
+  <startingHediffs>
+  <li>
+    <def>BR_Stability</def>
+    <severity>1</severity>
+    <chance>1</chance>
+  </li>
+</startingHediffs>
   </PawnKindDef>
 </Defs>
