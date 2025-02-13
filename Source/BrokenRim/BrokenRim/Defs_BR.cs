@@ -14,5 +14,7 @@ namespace BrokenRim
         public static SoundDef Stability_Hit;
         public static SoundDef Stability_Explode;
         public static DamageDef Unstability;
+        public static EffecterDef BR_Damage_Stability;
+        public static HediffDef BR_Stability;
     }
 }

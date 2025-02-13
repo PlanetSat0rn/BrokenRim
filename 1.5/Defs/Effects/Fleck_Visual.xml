@@ -1,0 +1,12 @@
+<Defs>
+    <FleckDef ParentName="FleckBase">
+    <defName>BR_StabilityHitFleck</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0.07</solidTime>
+    <fadeOutTime>0.08</fadeOutTime>
+    <graphicData>
+      <texPath>BrokenRim/Effects/Stability_Hit</texPath>
+      <shaderType>Mote</shaderType>
+    </graphicData>
+  </FleckDef>
+</Defs>

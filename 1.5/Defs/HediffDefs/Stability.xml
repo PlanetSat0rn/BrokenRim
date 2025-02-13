@@ -27,6 +27,7 @@
     <soundExplosion>Stability_Explode</soundExplosion>
     <combatLogRules>Damage_Bomb</combatLogRules>
   </DamageDef>
+
 <HediffDef>
     <defName>BR_Stability</defName>
     <hediffClass>HediffWithComps</hediffClass>
@@ -34,15 +35,47 @@
     <labelNoun>the stability</labelNoun>
     <description>The Stability.</description>
     <stages>
-<li>
-<label>default</label>
-<becomeVisible>false</becomeVisible>
-</li>
+      <li>
+        <label>destabilizing</label>
+        <becomeVisible>true</becomeVisible>
+      </li>
+      <li>
+        <minSeverity>0.15</minSeverity>
+        <label>stable</label>
+        <becomeVisible>true</becomeVisible>
+      </li>
+
     </stages>
     <comps>
       <li Class="BrokenRim.HediffCompProperties_Stability">
         <damageDef>Unstability</damageDef>
         <explosionRadius>2</explosionRadius>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>BR_HighStability</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>high stability</label>
+    <labelNoun>the high stability</labelNoun>
+    <description>The Stability Modifier.</description>
+    <comps>
+      <li Class="BrokenRim.HediffCompProperties_MaxStabilityModifier">
+        <maxStability>200</maxStability>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>BR_ExtremelyHighStability</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>extremely high stability</label>
+    <labelNoun>the extremely high stability</labelNoun>
+    <description>The Stability Modifier.</description>
+    <comps>
+      <li Class="BrokenRim.HediffCompProperties_MaxStabilityModifier">
+        <maxStability>400</maxStability>
       </li>
     </comps>
   </HediffDef>
