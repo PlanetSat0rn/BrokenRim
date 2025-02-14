@@ -40,7 +40,7 @@ namespace BrokenRim
             else
             {
                 comp.Props.currentCharges++;
-                comp.Props.chargeSound.PlayOneShot(SoundInfo.InMap(new TargetInfo(comp.Pawn)));
+                comp.Props.chargeSound.PlayOneShot(SoundInfo.InMap(new TargetInfo(this.CasterPawn)));
             }
 
         }
@@ -61,7 +61,7 @@ namespace BrokenRim
     }
 
     //Comp
-    public class Comp_Charges : CompStatEntry
+    public class Comp_Charges : CompEquippable
     {
 
         public override void PostExposeData()
@@ -79,51 +79,11 @@ namespace BrokenRim
             }
         }
 
-        public CompEquippable equippable
-        {
-            get
-            {
-                return this.parent.TryGetComp<CompEquippable>();
-            }
-        }
-
-        private CompEquippable EquipmentSource
-        {
-            get
-            {
-                bool flag = this.compEquippableInt != null;
-                CompEquippable result;
-                if (flag)
-                {
-                    result = this.compEquippableInt;
-                }
-                else
-                {
-                    this.compEquippableInt = this.parent.TryGetComp<CompEquippable>();
-                    bool flag2 = this.compEquippableInt == null;
-                    if (flag2)
-                    {
-                        Log.ErrorOnce(this.parent.LabelCap + " has CompSecondaryVerb but no CompEquippable", 50020);
-                    }
-                    result = this.compEquippableInt;
-                }
-                return result;
-            }
-        }
-        
-        public Pawn Pawn
-        {
-            get
-            {
-                return this.EquipmentSource.PrimaryVerb.caster as Pawn;
-            }
-        }
-
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
-            if (this.Pawn != null)
+            if (this.Holder != null)
             {
-                if (Find.Selector.SelectedPawns.Contains(this.Pawn) && this.Pawn.Drafted && this.Pawn.Faction == Faction.OfPlayer)
+                if (Find.Selector.SelectedPawns.Contains(this.Holder) && this.Holder.Drafted && this.Holder.Faction == Faction.OfPlayer)
                 {
                     Gizmo_WeaponWithCharges gizmo = new Gizmo_WeaponWithCharges();
                     gizmo.comp = this;
@@ -132,11 +92,9 @@ namespace BrokenRim
                 yield break;
             }
         }
-
-        private CompEquippable compEquippableInt;
     }
 
-        public class CompProperties_Charges : CompProperties_StatEntry
+        public class CompProperties_Charges : CompProperties
     {
 
         public CompProperties_Charges() {
