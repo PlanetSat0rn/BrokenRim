@@ -27,8 +27,9 @@ namespace BrokenRim
         {
             if (comp.Props.currentCharges >= comp.Props.targetCharges)
             {
-                base.WarmupComplete();
+                comp.Props.oldCharges = comp.Props.currentCharges;
                 comp.Props.currentCharges = 0;
+                base.WarmupComplete();
                 Pawn pawn = this.currentTarget.Thing as Pawn;
                 if (pawn != null && !pawn.Downed && !pawn.IsColonyMech && this.CasterIsPawn && this.CasterPawn.skills != null)
                 {
@@ -81,8 +82,6 @@ namespace BrokenRim
 
         public override IEnumerable<Gizmo> CompGetEquippedGizmosExtra()
         {
-            this.LogStuff();
-            Log.Message("the");
             if (this.Holder != null)
             {
 
@@ -116,5 +115,6 @@ namespace BrokenRim
         public int charges = 3;
         public float targetCharges = 5;
         public int currentCharges = 0;
+        public int oldCharges = 0;
     }
 }

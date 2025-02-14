@@ -26,10 +26,10 @@ namespace BrokenRim
 
         public override GizmoResult GizmoOnGUI(Vector2 topLeft, float maxWidth, GizmoRenderParms parms)
         {
-            Rect rect = new Rect(topLeft, new Vector2(this.GetWidth(maxWidth), 75f));
+            Rect rect = new Rect(topLeft, new Vector2(140f, 75f));
             Rect rect2 = rect.ContractedBy(6f);
             Widgets.DrawWindowBackground(rect);
-            float progress = Math.Max(comp.Props.currentCharges, comp.Props.charges);
+            float progress = (float)comp.Props.currentCharges / (float)comp.Props.charges;
             Widgets.FillableBar(rect2,progress,FullBarTex,EmptyBarTex,true);
             Widgets.HorizontalSlider(rect2, ref comp.Props.targetCharges, new FloatRange(1, comp.Props.charges), "Charges", 1);
             return new GizmoResult(GizmoState.Clear);

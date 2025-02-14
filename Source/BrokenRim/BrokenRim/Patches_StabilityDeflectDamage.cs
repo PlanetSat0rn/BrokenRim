@@ -10,7 +10,7 @@ namespace BrokenRim
 {
     [HarmonyPatch(typeof(ThingWithComps), "PreApplyDamage")]
 
-    public static class StabilityDeflectDamagePatch
+    public static class Patches_StabilityDeflectDamage
     {
         [HarmonyPostfix]
 
