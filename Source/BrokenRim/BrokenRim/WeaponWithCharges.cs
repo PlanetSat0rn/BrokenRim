@@ -82,10 +82,11 @@ namespace BrokenRim
 
         public override IEnumerable<Gizmo> CompGetEquippedGizmosExtra()
         {
+            this.LogStuff();
+            Log.Message("the");
             if (this.Holder != null)
             {
-                this.LogStuff();
-                Log.Message("the");
+
                 if (Find.Selector.SelectedPawns.Contains(this.Holder) && this.Holder.Drafted && this.Holder.Faction == Faction.OfPlayer)
                 {
                     Gizmo_WeaponWithCharges gizmo = new Gizmo_WeaponWithCharges();
