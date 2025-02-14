@@ -79,10 +79,13 @@ namespace BrokenRim
             }
         }
 
-        public override IEnumerable<Gizmo> CompGetGizmosExtra()
+
+        public override IEnumerable<Gizmo> CompGetEquippedGizmosExtra()
         {
             if (this.Holder != null)
             {
+                this.LogStuff();
+                Log.Message("the");
                 if (Find.Selector.SelectedPawns.Contains(this.Holder) && this.Holder.Drafted && this.Holder.Faction == Faction.OfPlayer)
                 {
                     Gizmo_WeaponWithCharges gizmo = new Gizmo_WeaponWithCharges();
@@ -92,8 +95,16 @@ namespace BrokenRim
                 yield break;
             }
         }
+
+        public void LogStuff()
+        {
+            Log.Message(this.Holder);
+            Log.Message(this.Holder.Drafted);
+            Log.Message(this.Holder.Faction);
+        }
     }
 
+    
         public class CompProperties_Charges : CompProperties
     {
 
