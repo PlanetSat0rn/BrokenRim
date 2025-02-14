@@ -26,7 +26,7 @@ namespace BrokenRim
 
         public override GizmoResult GizmoOnGUI(Vector2 topLeft, float maxWidth, GizmoRenderParms parms)
         {
-            Rect rect = new Rect(topLeft, new Vector2(maxWidth, 75f));
+            Rect rect = new Rect(topLeft, new Vector2(this.GetWidth(maxWidth), 75f));
             Rect rect2 = rect.ContractedBy(6f);
             Widgets.DrawWindowBackground(rect);
             float progress = Math.Max(comp.Props.currentCharges, comp.Props.charges);

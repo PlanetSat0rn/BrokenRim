@@ -79,7 +79,6 @@ namespace BrokenRim
             }
         }
 
-
         public override IEnumerable<Gizmo> CompGetEquippedGizmosExtra()
         {
             this.LogStuff();
