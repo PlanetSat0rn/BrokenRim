@@ -119,7 +119,7 @@ namespace BrokenRim
             }
         }
 
-        public override IEnumerable<Gizmo> CompGetWornGizmosExtra()
+        public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
             if (this.Pawn != null)
             {
