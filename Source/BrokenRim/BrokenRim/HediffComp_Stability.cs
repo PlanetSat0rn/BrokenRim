@@ -124,13 +124,15 @@ namespace BrokenRim
             MoteMaker.ThrowText(parentPawn.TrueCenter(), parentPawn.Map, "Destabilized!");
             GenExplosion.DoExplosion(parentPawn.Position, parentPawn.Map, Props.explosionRadius, Props.damageDef, parentPawn, Props.damageAmount, -1, null, null, null, null, null, 0, 1, null, false, null, 0, 1, 0, false, null, null, null, true, 1, 0, true, null, 1f);
             parentPawn.Destroy(DestroyMode.KillFinalize);
+            parentPawn.Kill(new DamageInfo(Defs_BR.Unstability,999));
         }
         public void Kamikaze()
         {
             Pawn parentPawn = this.parent.pawn;
             GenExplosion.DoExplosion(parentPawn.Position, parentPawn.Map, Stability/12, Props.damageDef, parentPawn, Stability/2, -1, null, null, null, null, null, 0, 1, null, false, null, 0, 1, 0, false, null, null, null, true, 1, 0, true, null, 1f);
             parentPawn.Kill(new DamageInfo(Defs_BR.Unstability, 999));
-            parentPawn.Destroy();
+            parentPawn.Destroy(DestroyMode.KillFinalize);
+            parentPawn.Kill(new DamageInfo(Defs_BR.Unstability, 999));
         }
     }
 }

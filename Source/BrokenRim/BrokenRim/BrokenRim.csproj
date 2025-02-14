@@ -68,10 +68,12 @@
   <ItemGroup>
     <Compile Include="BrokenRim_Harmony.cs" />
     <Compile Include="Gizmo_CosmokinStability.cs" />
+    <Compile Include="Gizmo_WeaponWithCharges.cs" />
     <Compile Include="HediffCompProperties_Stability.cs" />
     <Compile Include="HediffComp_MaxStabilityModifier.cs" />
     <Compile Include="HediffComp_Stability.cs" />
     <Compile Include="Defs_BR.cs" />
+    <Compile Include="WeaponWithCharges.cs" />
     <Compile Include="StabilityDeflectDamagePatch.cs" />
     <Compile Include="Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

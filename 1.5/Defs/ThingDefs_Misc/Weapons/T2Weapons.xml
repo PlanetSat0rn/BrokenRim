@@ -13,6 +13,20 @@
       <speed>100</speed>
     </projectile>
 </ThingDef>
+<ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Solar</defName>
+    <label>mini sun</label>
+    <graphicData>
+      <texPath>BrokenRim/Projectiles/Solar</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<projectile>
+      <damageDef>PlasmaBurnDamage</damageDef>
+      <damageAmountBase>40</damageAmountBase>
+	  <armorPenetrationBase>0.8</armorPenetrationBase>
+      <speed>100</speed>
+    </projectile>
+</ThingDef>
 	<ThingDef ParentName="BaseBullet">
     <defName>Bullet_StarCluster</defName>
     <label>star cluster</label>
@@ -227,6 +241,72 @@
         </capacities>
         <power>12</power>
         <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_SolarAccelerator</defName>
+    <label>solar accelerator</label>
+    <description>A very powerful rifle made to tear through any kind of matter.</description>
+    <graphicData>
+      <texPath>BrokenRim/Weapons/SolarAccelerator</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>BrokenRimT2Weaponry</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <displayPriority>405</displayPriority>
+	  <recipeUsers>
+	  <li>BrokenRimT2Bench</li>
+	  </recipeUsers>
+    </recipeMaker>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	    <costList>
+      <Plasteel>200</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>1.5</Mass>
+      <AccuracyTouch>0.16</AccuracyTouch>
+      <AccuracyShort>0.32</AccuracyShort>
+      <AccuracyMedium>0.64</AccuracyMedium>
+      <AccuracyLong>0.86</AccuracyLong>
+      <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs Class="BrokenRim.Verb_WeaponWithCharges">
+      <li>
+        <verbClass>BrokenRim.Verb_WeaponWithCharges</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Solar</defaultProjectile>
+        <warmupTime>2</warmupTime>
+        <range>60</range>
+        <soundCast>Shot_SolarAccelerator</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="BrokenRim.CompProperties_Charges">
+        <charges>5</charges>
+        <chargeSound>BR_ChargeSound</chargeSound>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>4</cooldownTime>
       </li>
     </tools>
   </ThingDef>

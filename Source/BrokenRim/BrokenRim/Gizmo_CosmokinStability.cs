@@ -8,6 +8,7 @@ using Verse;
 
 namespace BrokenRim
 {
+    [StaticConstructorOnStartup]
     public class Gizmo_CosmokinStability : Gizmo
     {
 
