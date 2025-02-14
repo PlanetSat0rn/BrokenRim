@@ -7,12 +7,14 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Verse;
+using RimWorld;
 
 namespace BrokenRim
 {
+    [HarmonyPatch(typeof(Bullet), "Impact")]
     public class Patches_ChargeDamage
     {
-        // Transpiler - Ranged DamageDef Replacement
+        [HarmonyTranspiler]
         public static IEnumerable<CodeInstruction> Bullet_Impact_Transpiler(IEnumerable<CodeInstruction> instructions, MethodBase methodBase)
         {
             List<CodeInstruction> il = instructions.ToList();
@@ -41,7 +43,6 @@ namespace BrokenRim
             }
         }
 
-        // Replace DamageDef and/or apply damage multiplier
         public static void TryReplaceChargeDamage(Thing launcher, ref DamageInfo dinfo)
         {
             if (launcher is Pawn p)
@@ -49,9 +50,9 @@ namespace BrokenRim
                 var equipment = p.equipment.AllEquipmentListForReading;
                 for (int i = 0; i < equipment.Count; i++)
                 {
-                    if (equipment[i].TryGetComp<Comp_Charges>() is Comp_Charges comp)
+                    if (equipment[i].GetComp<Comp_Charges>() is Comp_Charges comp)
                     {
-                        dinfo.SetAmount(dinfo.Amount + (30 * comp.Props.oldCharges));
+                        dinfo.SetAmount(dinfo.Amount + (comp.Props.additionalDamage * comp.Props.oldCharges));
                     }
                 }
             }

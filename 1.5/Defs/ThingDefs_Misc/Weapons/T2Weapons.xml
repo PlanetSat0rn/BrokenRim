@@ -296,6 +296,7 @@
       <li Class="BrokenRim.CompProperties_Charges">
         <charges>5</charges>
         <chargeSound>BR_ChargeSound</chargeSound>
+        <additionalDamage>30</additionalDamage>
       </li>
     </comps>
     <tools>

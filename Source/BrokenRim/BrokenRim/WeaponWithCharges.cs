@@ -116,5 +116,6 @@ namespace BrokenRim
         public float targetCharges = 5;
         public int currentCharges = 0;
         public int oldCharges = 0;
+        public int additionalDamage;
     }
 }
